@@ -1,0 +1,55 @@
+body {
+  background-image: url(../img/burger-wallpapers.png);
+}
+
+.jumbotron {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+}
+.jumboText {
+  font-size: 80px;
+  font-weight: bold;
+  transform: scale(3,2);
+
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+    border: black solid 2px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  input {
+    width: 50%;
+    border: black solid 2px;
+    border-radius: 10px;
+  }
+  
+  .change-devour {
+    text-align: right;
+
+  }
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
