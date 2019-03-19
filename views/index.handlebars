@@ -1,19 +1,18 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid burgerHeader">
     <div class="container">
-        <h1 class="display-4 text-center jumboText">Burgers</h1>
+        <h1 class="display-4 text-center jumboText">Eat da Burgers</h1>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-6">
-            <h2>Burgers to be devoured</h2>
-
+        <div class="col-lg-6 col-sm-12">
+            <h2>Burgers to be devoured</h2>   
             <ul>
                 {{#each burgers}} {{#unless devoured}} {{> burger/burgerBlock devoured=false}} {{/unless}} {{/each}}
             </ul>
         </div>
 
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <h2>Burgers that have been devoured</h2>
             <ul>
                 {{#each burgers}} {{#if devoured}} {{>burger/burgerBlock devoured=true}} {{/if}} {{/each}}

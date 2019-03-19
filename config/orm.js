@@ -35,7 +35,7 @@ var orm = {
       });
     },
     insertOne: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO "+table+ " (name, devoured) VALUES (?)"
+    var queryString = "INSERT INTO "+table+ " (burger_name, devoured) VALUES (?)"
 
   
       connection.query(queryString, [vals], function(err, result) {
