@@ -1,5 +1,6 @@
 $(function() {
     $(".change-devour").on("click", function(event) {
+      event.preventDefault();
       var id = $(this).data("id");
       var isDevoured = $(this).data("devoured");
       var eat;
@@ -21,7 +22,7 @@ $(function() {
         data: burgerState
       }).then(
         function() {
-          console.log("changed sleep to", burgerState);
+          console.log("changed devoured to", burgerState);
           // Reload the page to get the updated list
           location.reload();
         }
